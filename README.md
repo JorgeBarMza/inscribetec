@@ -7,12 +7,12 @@ https://inscribetec-388b8.web.app
 Email: `A01020781@itesm.mx`    
 Password: `12345678`   
 
-# Development environment setup
+## Development environment setup
 
     npm install -g firebase-tools   
     firebase login    
     firebase init   
 
-# Deployment
+## Deployment
 
 `firebase deploy`   
