@@ -1,5 +1,4 @@
 function signIn2() {
-  alert('hi');
   let email = document.getElementById("email").value;
   let password = document.getElementById("password").value;
   let errorb = false;
@@ -17,7 +16,6 @@ function signIn2() {
     errorb = true;
   }).then(()=>{
     if (!errorb) {
-      alert('yo');
       window.location.href = "../rooms.html";
     }
   });
