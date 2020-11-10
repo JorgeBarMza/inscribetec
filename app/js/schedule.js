@@ -12,15 +12,16 @@
 // firebase.initializeApp(firebaseConfig);
 
 function getSchedule() {
+  alert('entered');
   // Create a reference with an initial file path and name
-  var storage = firebase.storage();
-  var pathReference = storage.ref('images/stars.jpg');
-
   firebase.storage().ref('schedule.jpg').getDownloadURL().then(function(url) {
     var img = document.getElementById('img');
     img.src = url;
+    alert('changed');
   }).catch(function(error) {
     // Handle any errors
     alert('No schedule found');
   });
 }
+
+window.onload = getSchedule
