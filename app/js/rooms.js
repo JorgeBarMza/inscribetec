@@ -6,6 +6,7 @@ function getRooms() {
       let rooms = snapshot.val();
       Object.keys(rooms).forEach((key)=>{
         var ul = document.getElementById("ul");
+        console.log("Here ", ul)
         var li = document.createElement("li");
         var btn = document.createElement("BUTTON");
         // Display room.
